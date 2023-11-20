@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+:root{
+    --main-color : rgb(247, 171, 7)  ;
+    --black : #131311 ;
+    --bg: #010103 ;
+    --border:.1rem solid rgba(255,255,255,.3) ;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size : 62.5% ;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar{
+    width:.8rem
+}
+html ::-webkit-scrollbar-track{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: black;
+    scroll-padding-top: 120px;
+}
+
+
+/*header section*/
+.header{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+    justify-content: left;
+    
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff ; 
+    
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+ 
+}
+
+/*home section*/
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url('https://iphoneswallpapers.com/wp-content/uploads/2022/06/BMW-Black-iPhone-13-Wallpaper.jpg') no-repeat ;
+    background-position: right;
+    background-size: 50%;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+.home .content h3{
+    
+    font-size: 6rem; /* make our h1 tag larger */
+    font-family: sans-serif; /* choosing our font */
+    background: linear-gradient(to right, rgba(138, 25, 138, 0) 0%, rgba(13, 14, 14, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(239, 144, 2) 52%, rgb(252, 252, 252) 60%, rgb(224, 188, 4) 61%); /* you can change the colors based on your preference */
+    background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text; /*for browsers compatibility */
+    -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease
+    
+}
+
+.home .content p {
+    font-size :x-large;
+    color: white;
+}

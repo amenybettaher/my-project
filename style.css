@@ -39,6 +39,24 @@ body{
     scroll-padding-top: 120px;
 }
 
+section{
+    padding: 2rem 7%;
+    padding-top: 120px; 
+    margin-top: -5px;
+}
+
+.heading {
+   text-align: center; 
+   color: #fff;
+   text-transform: uppercase;
+   padding-bottom: 3.5;
+   font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase; 
+}
+
 
 /*header section*/
 .header{
@@ -108,3 +126,35 @@ body{
     font-size :x-large;
     color: white;
 }
+
+/* section about  */
+.about .hm {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    margin: 4%;
+    }
+    
+    .about .hm .image{
+        flex: 1 1 45rem;
+    }
+    .about .hm .image img{
+        width: 100%;
+    }
+    .about .hm .content1{
+        flex: 1 1 45rem;
+        padding: 2rem;
+    }
+    .about .hm .content1 h3{
+      font-size: 3rem;
+      color: #fff;
+    }
+    .about .hm .content1 p{
+        font-size: 1.6rem;
+        color: #ccc;
+        padding: 1rem 0;
+    line-height: 1.8;
+      }
+
+      

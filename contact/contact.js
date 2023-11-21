@@ -1,0 +1,18 @@
+
+/*function to verify the password same as sign in or not */
+
+function verifyPassword() {
+    var loginPassword = document.getElementById("loginPassword").value;
+    var signInPassword = document.getElementById("signInPassword").value;
+
+    if (loginPassword.length === 0) {
+        alert("Please enter a password.");
+    } else if (loginPassword !== signInPassword) {
+        alert("Incorrect password. Please try again.");
+    } else {
+        alert("Login successful!");
+
+        // Redirect to help page
+        window.location.href = "http://127.0.0.1:5500/help/help.html";
+    }
+}

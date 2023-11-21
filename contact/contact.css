@@ -1,0 +1,94 @@
+body {
+    background: rgb(3, 3, 3);
+    scroll-padding-top: 120px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 140px;
+   
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 4rem;
+    justify-content: left;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header .navbar h2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(138, 25, 138, 0) 0%, rgba(13, 14, 14, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(239, 144, 2) 52%, rgb(252, 252, 252) 60%, rgb(224, 188, 4) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    max-width: 400px;
+    margin: 40px ;
+    padding: 50px;
+    background-color: rgb(208, 192, 176);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(255, 170, 0);
+    color: rgb(6, 6, 6);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(221, 203, 0);
+}
+
+.login-container {
+    text-align: center;
+}

@@ -1,3 +1,4 @@
+/* Importing Google font - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
 :root{
@@ -57,7 +58,6 @@ section{
     text-transform: uppercase; 
 }
 
-
 /*header section*/
 .header{
     background: black;
@@ -89,6 +89,7 @@ section{
     color:#fff ; 
     
 }
+
 .header .navbar a:hover{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
@@ -96,7 +97,18 @@ section{
  
 }
 
-/*home section*/
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+
+}
+.header .icons div:hover{
+   color:var(--main-color) ; 
+}
+
+/*home section */
 .home {
     min-height: 100vh;
     display: flex;
@@ -109,6 +121,7 @@ section{
 .home .content {
     max-width: 60rem;
 }
+
 .home .content h3{
     
     font-size: 6rem; /* make our h1 tag larger */
@@ -122,39 +135,162 @@ section{
     
 }
 
-.home .content p {
+.home .content a {
     font-size :x-large;
     color: white;
 }
 
 /* section about  */
 .about .hm {
+display: flex;
+align-items: center;
+background: var(--black);
+flex-wrap: wrap;
+margin: 4%;
+}
+
+.about .hm .image{
+    flex: 1 1 45rem;
+}
+.about .hm .image img{
+    width: 100%;
+}
+.about .hm .content1{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .hm .content1 h3{
+  font-size: 3rem;
+  color: #fff;
+}
+.about .hm .content1 p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+line-height: 1.8;
+  }
+
+  /* section sell new and old car */
+  
+  .sell {
     display: flex;
     align-items: center;
-    background: var(--black);
     flex-wrap: wrap;
-    margin: 4%;
-    }
-    
-    .about .hm .image{
-        flex: 1 1 45rem;
-    }
-    .about .hm .image img{
-        width: 100%;
-    }
-    .about .hm .content1{
-        flex: 1 1 45rem;
-        padding: 2rem;
-    }
-    .about .hm .content1 h3{
-      font-size: 3rem;
-      color: #fff;
-    }
-    .about .hm .content1 p{
-        font-size: 1.6rem;
-        color: #ccc;
-        padding: 1rem 0;
-    line-height: 1.8;
-      }
+    padding: 2rem;
+}
 
-      
+.sell .box {
+    flex: 1 1 45rem;
+    margin: 1rem;
+    background:#090909;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sell .box:hover {
+    transform: scale(1.05);
+}
+
+.sell .box img {
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.sell .box h3 {
+    font-size: 2rem;
+    color: rgb(247, 171, 7) ;
+}
+
+.sell .box .price {
+    font-size: 1.4rem;
+    color: #ec943c;
+    margin-top: 0.5rem;
+}
+
+.sell .box .cont {
+    margin-top: 1rem;
+}
+
+.sell .box .cont h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.sell .box .cont p {
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.sell .box .cont #img {
+    text-align: center;
+    color: rgb(255, 208, 0);
+   background-color:rgb(5, 5, 5);
+   padding: 1%;
+   margin: 2%;
+}
+.sell .box .cont .icons {
+    margin-top: 1rem;
+}
+
+.sell .box .cont .icons .fa-shopping-cart {
+    color: var(--main-color); /* Set the desired orange color */
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.sell .box .cont .icons .fa-shopping-cart:hover {
+    color: #fff; 
+}
+
+/* section footer */
+.footer {
+    background-color: #151515;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 70px;
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}

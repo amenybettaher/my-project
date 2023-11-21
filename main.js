@@ -9,3 +9,31 @@ $(document).ready(function() {
       },500); // Adjust the animation speed 
     })
   })
+
+
+    // this code to do transition from about section to sell section 
+    $(document).ready(function() {
+      $('nav a[href="#sellMyCar"]').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $('#sell').offset().top
+        },0) 
+      })
+    })
+
+      // this code to do transition from about section to sell section 
+      $(document).ready(function() {
+        $('nav a[href="#sellold"]').on('click', function(event) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $('#sell1').offset().top
+          },0) 
+        })
+      })
+
+     
+     
+      
+
+
+   
